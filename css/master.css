@@ -1,0 +1,160 @@
+body, header, .text-block{
+opacity: 0.9;
+background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a{
+  font-family: helvetica;
+  font-size: 22px;
+  color: seashell;
+  padding-bottom: 10px;
+}
+
+/* Classes in the header section*/
+
+header{
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header span{
+  text-decoration: underline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+header img{
+  margin-left: 10px;
+  height: 50px;
+}
+
+/* Classes in the main section */
+
+main{
+  width: 100%;
+  top: 70px;
+  margin-bottom: 70px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  align-items: center;
+}
+
+.text-block{
+  width: 100%;
+  text-align: center;
+}
+
+.flex-wrap-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* Mission section */
+#mission{
+  width: 1200px;
+  height: 700px;
+  background-image: url(../images/img-mission-background.jpg);
+  margin: 0 auto 70px auto; /*attempt at making all items visible in smaller windows*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/*Product section*/
+#products{
+  width: 100%;
+  margin: 0 auto 70px auto; /*attempt at making all items visible in smaller windows*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#products .flex-wrap-container{
+  width: 1000px;
+  margin: 0 auto 70px auto; /*attempt at making all items visible in smaller windows*/
+  justify-content: center;
+}
+
+.product-box{
+  width: 300px;
+  padding: 0 15px;
+}
+
+.product-box img{
+  width: 300px;
+  height: 200px;
+}
+
+.product-box h4{
+  margin: 10px;
+  text-align: center;
+}
+
+
+/* Locations section */
+#locations{
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto 70px auto; /*attempt at making all items visible in smaller windows*/
+
+  background-image: url(../images/img-locations-background.jpg);
+  text-align: center;
+  justify-content: center;
+}
+
+#locations .flex-wrap-container{
+  width: 1100px;
+  margin: 15px auto;
+  }
+
+.location-box{
+  margin: 20px auto;
+  opacity: 1;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+}
+
+
+/* Contact section */
+#contact{
+  height: 200px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+
+/* Footer */
+footer{
+  margin-left: 20px;
+  text-align: left;
+  font-weight: bold;
+}
